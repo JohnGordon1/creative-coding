@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Concrete Manifesto</title> 
+    <!--
+        This is my (Zach Whalen) interpretaton of 
+        the Concrete Manifesto exercise:
+        https://canvas.umw.edu/courses/1446087/assignments/10969836
+
+        My manifesto statement is by Werner Herzog:
+        "Fact creates norms, and truth illumination."
+        https://designmanifestos.org/werner-herzog-the-minnesota-declaration/
+        
+        
+        This is an attempt with a more Futurist design.
+
+    -->  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+       
+        div {
+/*            position: absolute;*/
+            top: -500px;
+            left: 500px;
+            rotate: -30deg;
+            border-left: 10px solid gray;
+            padding: 18px;
+            padding-top:600px;
+            height: 2000px;
+            position:fixed;
+        }
+        p {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size:60px;
+            margin-top: 0;
+            margin-bottom:0;
+            line-height: 100%;
+            letter-spacing:15px;
+        }
+    
+        #grow:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p>FACT</p>
+        <p>CREATES</p>
+        <p id="grow">NORMS</p> 
+        <p>AND</p> 
+        <p>TRUTH</p> 
+        <p>ILLUMINATION</p>
+    </div>
+
+  
+
+<script type="text/javascript">
+let g = document.getElementById("grow");
+
+// set the font-size property in JavaScript
+g.style.fontSize = "60px";
+
+// add a function to the onclick event
+g.onclick = function(){
+
+     // determine current font size and convert it to an integer
+     let fs = Number(this.style.fontSize.replace("px",""));
+
+     // make sure it worked
+     console.log(fs);
+
+     // change the color of the clicked element 
+     this.style.color = "red";
+
+     // change the font size to increase it by 10%
+     this.style.fontSize = fs * 1.1 + "px";
+};
+</script>
+
+</body>
+</html> 

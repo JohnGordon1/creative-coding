@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Concrete Manifesto</title> 
+    <!--
+        This is my (Zach Whalen) interpretaton of 
+        the Concrete Manifesto exercise:
+        https://canvas.umw.edu/courses/1446087/assignments/10969836
+
+        My manifesto statement is by Werner Herzog:
+        "Fact creates norms, and truth illumination."
+        https://designmanifestos.org/werner-herzog-the-minnesota-declaration/
+        
+
+    -->  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+        p {
+            font-size: 130vh;
+            margin:0;
+            line-height:85%;
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: -20px;
+            width:14400px;
+            height:95vh;
+            position:absolute;
+            top:0;
+            left:0;
+            overflow-x:hidden;
+        }
+
+        /*div {
+           width: 14400px;
+           overflow-x: hidden;
+           position:absolute;
+           top: 0;
+           left:0;
+           height:90vh;
+        }*/
+
+        #grow:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div > -->
+    <p>FACT CREATES NORM AND TRUTH ILLUMINATION</p>
+    <!-- </div> -->
+
+
+<script type="text/javascript">
+let g = document.getElementById("grow");
+
+// set the font-size property in JavaScript
+g.style.fontSize = "100%";
+
+// add a function to the onclick event
+g.onclick = function(){
+
+     // determine current font size and convert it to an integer
+     let fs = Number(this.style.fontSize.replace("%",""));
+
+     // make sure it worked
+     console.log(fs);
+
+     // change the color of the clicked element 
+     this.style.color = "red";
+
+     // change the font size to increase it by 10%
+     this.style.fontSize = fs * 1.1 + "%";
+};
+</script>
+
+</body>
+</html> 
