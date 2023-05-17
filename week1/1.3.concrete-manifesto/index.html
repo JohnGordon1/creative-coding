@@ -14,8 +14,68 @@
 </head>
 <body>
 
-    <h1>This is a Manifesto</h1>
-    <p>This is a paragraph.</p>
+    <!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        #manifesto {
+            width: 500px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #manifesto h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #manifesto p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="manifesto">
+        <h1>Manifesto: Be the Change</h1>
+        <p>Because the people who are crazy enough to think they can change the world,</p>
+        <p>are the ones who do.</p>
+    </div>
+
+    <script>
+        let g = document.getElementById("manifesto");
+
+        // set the font-size property in JavaScript
+        g.style.fontSize = "100%";
+
+        // add a function to the onclick event
+        g.onclick = function(){
+             // determine current font size and convert it to an integer
+             let fs = Number(this.style.fontSize.replace("%",""));
+
+             // make sure it worked
+             console.log(fs);
+
+             // change the color of the clicked element 
+             this.style.color = "red";
+
+             // change the font size to increase it by 10%
+             this.style.fontSize = fs * 1.1 + "%";
+        };
+    </script>
+</body>
+</html>
+
 
 </body>
 </html> 
