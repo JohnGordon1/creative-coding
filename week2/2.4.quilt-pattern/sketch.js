@@ -1,4 +1,4 @@
-  // this is a sketch intended 
+// this is a sketch intended 
 // to simulate a specific quilt pattern
 // --> https://www.internationalquiltmuseum.org/exhibition/amish-quilts 
 
