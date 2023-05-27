@@ -1,4 +1,6 @@
-
+  // this is a sketch intended 
+// to simulate a specific quilt pattern
+// --> https://www.internationalquiltmuseum.org/exhibition/amish-quilts 
 
 function setup() {
   createCanvas(400, 400);
@@ -7,9 +9,7 @@ function setup() {
 function draw() {
   background(220);
 
-  // this is a sketch intended 
-// to simulate a specific quilt pattern
-// --> https://www.internationalquiltmuseum.org/exhibition/amish-quilts 
+
 
 function setup() {
   createCanvas(1200, 1200);
