@@ -34,13 +34,4 @@ angleMode(87);
         fill("blue"); 
         rect(0,0,100,100);
 
-        translate(x * 100, y * 100);
-        fill("brown");
-        rect(0,0,100,100);
-
-        pop();
-
-      }
-    }
-  }
-}
+ 
